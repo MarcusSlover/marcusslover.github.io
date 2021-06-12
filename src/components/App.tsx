@@ -1,53 +1,28 @@
 import React from 'react';
 import './style/App.css';
-import { createNavigation } from './Tools'
+import './style/Font.css'
 
-function App() {
-    const nav = createNavigation(["home(\"marcus\")", "creations"]);
-    const skin = "https://crafatar.com/renders/body/398c7569-3f15-4998-b0d9-be91a9ac935c?overlay&scale=10";
+import Header from './Header';
+import About from './About';
 
-    return (
-        <div className="App">
-
-            {/*Website header*/}
-            <header className="header">
-                {/*Navigation bar*/}
-                <div className="navigation">
-                    <nav>
-                        <ul>
-                            <li><a href="#home">
-                                <div>{nav[0]}</div>
-                            </a></li>
-                            <li><a href="#about">
-                                <div>{nav[1]}</div>
-                            </a></li>
-                            <li><a href="#creations">
-                                <div>{nav[2]}</div>
-                            </a></li>
-                            <li><a href="#github">
-                                <div>{nav[3]}</div>
-                            </a></li>
-                            <li><a href="#friends">
-                                <div>{nav[4]}</div>
-                            </a></li>
-                        </ul>
-                    </nav>
-                </div>
-            </header>
-
-            {/*About me*/}
-            <section className="about" id="about">
-                <span className="figure">
-                    <img src={skin}/>
-                </span>
-            </section>
-
-            {/*Website footer*/}
-            <footer>
-
-            </footer>
-        </div>
-    );
+/*Toggleable settings for the entire app*/
+export interface AppSettings {
+    // Currently empty
 }
 
-export default App;
+/*The app*/
+export default class App extends React.Component<{}, AppSettings> {
+
+    constructor(props: {}) {
+        super(props); // Props are empty
+        this.state = {} // Default settings
+    }
+
+    render(): React.ReactNode {
+        return <div id="app">
+            <Header/>
+            <About/>
+        </div>
+    }
+
+}

@@ -1,0 +1,10 @@
+@font-face {
+    font-family: "JetBrains Mono";
+    src: url("./fonts/fonts/variable/JetBrainsMono[wght].ttf");
+}
+
+@font-face {
+    font-style: italic;
+    font-family: "JetBrains Mono";
+    src: url("./fonts/fonts/variable/JetBrainsMono-Italic[wght].ttf");
+}

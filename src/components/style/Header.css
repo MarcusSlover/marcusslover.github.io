@@ -1,0 +1,46 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#header {
+    display: flex;
+    width: 98%;
+    padding: 1%;
+    justify-content: left;
+
+    /* Font style */
+    font-size: 1vmax;
+    font-family: "JetBrains Mono", monospace;
+    text-decoration: none;
+
+    /* Background animation */
+    background: linear-gradient(45deg, #4b778d, #28b5b5, #8fd9a8, #d2e69c);
+    background-size: 400% 400%;
+    animation: gradient 10s ease infinite;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0 50%;
+    }
+}
+
+.header-button:hover {
+    color: #ffffff;
+    transform: rotate(5deg);
+}
+
+.header-button {
+    transition: ease-in-out 0.3s;
+    transition-property: color;
+
+    margin-right: 2.5%;
+}
+

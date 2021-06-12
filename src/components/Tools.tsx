@@ -1,11 +1,12 @@
 import React from 'react';
+import './style/Text.css'
 
-export function createNavigation(strings: String[]) {
-    for (let i = 0; i < strings.length; i++) {
-        const text = strings[i];
-        if (!text.includes("(") && !text.includes(")")) {
-            strings[i] = text + "()";
-        }
+export default class Text extends React.Component {
+    render(): React.ReactNode {
+        return <span id="text">
+            {this.props.children}
+        </span>
     }
-    return strings
 }
+
+
