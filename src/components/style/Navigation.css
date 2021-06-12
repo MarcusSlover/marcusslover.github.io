@@ -1,14 +1,6 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-.App {
-}
-
 /* Navigation bar style */
 .navigation {
+
     /* Font settings */
     font-family: "JetBrains Mono", monospace;
     font-size: 300%;
@@ -40,11 +32,10 @@
 
     /* Shape settings */
     margin: 0;
-    padding: 20px;
+    padding: 2vh;
 
     /* Content settings */
     justify-content: space-around;
-    border-radius: 20px;
 }
 
 /* Items style */
@@ -53,37 +44,13 @@
 }
 
 .navigation li a {
-    border-radius: 20px;
-    color: #000;
+    color: #000000;
     text-decoration: none;
-    transition: transform 0.5s;
+    transition: transform 0.3s;
 }
 
 /* Hover effect for navigation items */
 .navigation li a:hover {
-    background-color: #121a24;
-    transform: rotate(5deg);
-    color: white;
-}
-
-/*
-   About me things.
- */
-#root {
-    background: linear-gradient(to top, #121a24 50%, rgba(0, 107, 168, 0.91) 50%);
-    height: 800px;
-}
-
-.about-text {
-    /* Font settings */
-    font-family: "JetBrains Mono", monospace;
-    font-size: 100%;
-    background: #ffffff;
-}
-
-.figure {
-    display: inline-block;
-    width: 200px;
-    height: 455px;
-    transform: translateX(150%) translateY(25%);
+    transform: rotate(5deg) translate(0, -0.5vw);
+    color: #ffffff;
 }
