@@ -7,7 +7,7 @@ export default class About extends React.Component {
         return <div id="about">
             <section id="about-text">
 
-                <Text img={"cactus"}>
+                <Text id={"about"} img={"cactus"} side={"left"}>
                     I'm Marcus and welcome to my website!
                     <br/>
                     Programming is one of my greatest passions.
@@ -16,7 +16,6 @@ export default class About extends React.Component {
                 </Text>
 
             </section>
-
         </div>
     }
 }

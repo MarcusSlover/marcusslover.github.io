@@ -3,6 +3,7 @@ import './style/Header.css'
 import marcusHead from './style/img/marcus_head.png'
 
 export default class Header extends React.Component {
+
     render(): React.ReactNode {
         return <div id="header">
             <span className="logo header-logo">

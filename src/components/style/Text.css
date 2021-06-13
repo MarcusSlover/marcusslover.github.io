@@ -1,4 +1,4 @@
-#text {
+.text {
     text-align: center;
 
     color: white;
@@ -15,10 +15,10 @@
     padding: 4vmin;
 }
 
-
 .text-logo {
     margin: auto;
-    padding-right: 2vw;
+    padding-right: 1vw;
+    padding-left: 1vw;
 }
 
 .text-logo img {

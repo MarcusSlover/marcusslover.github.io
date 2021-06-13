@@ -1,27 +1,32 @@
-import React from 'react';
+import React, {useState} from 'react';
+
 import './style/App.css';
 import './style/Font.css'
 
 import Header from './Header';
 import About from './About';
+import Theme from './Theme'
 
 /*Toggleable settings for the entire app*/
 export interface AppSettings {
-    // Currently empty
+    lightTheme: boolean
 }
 
 /*The app*/
 export default class App extends React.Component<{}, AppSettings> {
 
     constructor(props: {}) {
-        super(props); // Props are empty
-        this.state = {} // Default settings
+        super(props);
+        this.state = {lightTheme: false} // Default settings
     }
 
     render(): React.ReactNode {
+
         return <div id="app">
-            <Header/>
-            <About/>
+            <Theme>
+                <Header/>
+                <About/>
+            </Theme>
         </div>
     }
 
