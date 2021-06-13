@@ -2,21 +2,21 @@ import React from 'react';
 import './style/Text.css';
 
 export type TextProps = {
-    image?: string;
+    img?: string;
 }
 
 export default class Text extends React.Component<TextProps> {
     render(): React.ReactNode {
-        const image = this.props.image;
+        const image = this.props.img;
         let src;
 
         if (image != undefined) {
-            src = require("./style/img/" + this.props.image + ".png").default;
+            src = require("./style/img/" + this.props.img + ".png").default;
         }
 
         return <div id="text">
             {
-                image != undefined &&
+                src != undefined &&
                 <span className="text-logo">
                     <img src={src}/>
                 </span>
