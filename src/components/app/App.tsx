@@ -1,3 +1,7 @@
+/*
+ * Copyright (c) 2021, MarcusSlover All rights reserved.
+ */
+
 import '../style/App.css';
 import '../style/Font.css'
 

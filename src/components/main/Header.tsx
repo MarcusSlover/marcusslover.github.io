@@ -1,3 +1,7 @@
+/*
+ * Copyright (c) 2021, MarcusSlover All rights reserved.
+ */
+
 import '../style/Header.css'
 import marcusHead from '../style/img/marcus_head.png'
 

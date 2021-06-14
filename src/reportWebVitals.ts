@@ -1,3 +1,7 @@
+/*
+ * Copyright (c) 2021, MarcusSlover All rights reserved.
+ */
+
 import {ReportHandler} from 'web-vitals';
 
 const reportWebVitals = (onPerfEntry?: ReportHandler) => {

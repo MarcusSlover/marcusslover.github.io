@@ -1,3 +1,7 @@
+/*
+ * Copyright (c) 2021, MarcusSlover All rights reserved.
+ */
+
 import React, {CSSProperties} from 'react';
 import '../style/Text.css';
 

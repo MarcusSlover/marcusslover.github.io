@@ -1,3 +1,7 @@
+/*
+ * Copyright (c) 2021, MarcusSlover All rights reserved.
+ */
+
 import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './components/app/App';
