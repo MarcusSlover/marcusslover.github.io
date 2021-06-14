@@ -1,18 +1,7 @@
-.text {
-    text-align: center;
-
-    color: white;
-    font-size: 2vw;
-    font-family: Consolas, monospace;
-
-    border-radius: 2vw;
-    background-color: #34495e;
-
+.text-section {
     display: flex;
     margin: auto;
-    margin-top: 7vh;
-    width: 75%;
-    padding: 4vmin;
+    margin-top: 4vh;
 }
 
 .text-logo {
@@ -30,4 +19,8 @@
 .text-logo img:hover {
     border-radius: 33%;
     background-color: #44607b;
+}
+
+.text-title {
+    display: block;
 }
