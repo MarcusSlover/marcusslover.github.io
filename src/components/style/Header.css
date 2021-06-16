@@ -28,7 +28,7 @@
     padding-top: 0.5vh;
     padding-bottom: 0.5vh;
 
-    justify-content: left;
+    justify-content: space-evenly;
 
     /* Font style */
     font-size: 2vw;

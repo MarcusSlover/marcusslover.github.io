@@ -12,7 +12,7 @@ const Body = () => {
         <TextHeader id={"welcome"}
                     title={"Welcome dear visitor!"}
                     color={"#76e111"}
-                    img={"cactus"}
+                    img={"welcome"}
                     side={"left"}>
             Thank you for visiting my website!
             <br/>
@@ -23,7 +23,7 @@ const Body = () => {
         <TextHeader id={"about"}
                     title={"About me"}
                     color={"#1dc26a"}
-                    img={"command_block_minecart"}
+                    img={"slover"}
                     imgSize={10}
                     side={"left"}>
             Hi, I'm Marcus and I live in Warsaw.
@@ -43,7 +43,7 @@ const Body = () => {
             <TextBox id={"about-box-cpp"}>
                 Surprisingly, as I moved on I started watching C++ tutorials.
                 At the time, I was creating simple programs that would calculate or solve
-                certain problems. Sadly, since then I haven't felt in love with that language at all...
+                certain problems. Sadly, since then I haven't felt in "love" with that language at all...
             </TextBox>
 
         </TextHeader>
