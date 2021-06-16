@@ -2,6 +2,16 @@
  * Copyright (c) 2021, MarcusSlover All rights reserved.
  */
 
+.text-box {
+    transition-duration: 1s;
+    transition-property: transform, box-shadow;
+}
+
+.text-box:hover {
+    transform: translateY(-0.5vh);
+    box-shadow: 3vh 3vh #283949;
+}
+
 .text-section {
     display: flex;
     margin: auto;
@@ -12,12 +22,6 @@
     margin: auto;
     padding-right: 1vw;
     padding-left: 1vw;
-}
-
-.text-logo img {
-    width: 10vw;
-    height: auto;
-    image-rendering: pixelated;
 }
 
 .text-logo img:hover {
