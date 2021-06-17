@@ -24,6 +24,11 @@
     padding-left: 1vw;
 }
 
+.text-logo.small {
+    padding-right: 0vw;
+    padding-left: 0vw;
+}
+
 .text-logo img:hover {
     border-radius: 20%;
     background-color: #44607b;
