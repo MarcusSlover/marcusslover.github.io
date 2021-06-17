@@ -48,6 +48,26 @@ const Body = () => {
 
         </TextHeader>
 
+        <TextHeader id={"creations"}
+                    title={"My Creations"}
+                    color={"#0cabc9"}
+                    img={"creations"}
+                    imgSize={10}
+                    side={"left"}>
+            Pretty much most of my creations have to do something with Minecraft.
+            I absolutely love developing Minecraft plugins. Once, I even created my fully custom network!
+            There probably are even some YouTube videos about SloverTeam Network.
+
+            <TextBox id={"creations-box-holograms"}>
+                <b><u>FishingPlus</u> 🐟</b>
+                <br/>
+                A Minecraft plugin that makes fishing better & more interesting!
+                Adds tons of new content and quests. Get your rods and start working!
+                Currently in heavy development.
+            </TextBox>
+
+        </TextHeader>
+
     </div>;
 }
 
