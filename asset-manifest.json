@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/React-Deploy/static/css/main.6cedd5e0.chunk.css",
+    "main.js": "/React-Deploy/static/js/main.ce723715.chunk.js",
+    "main.js.map": "/React-Deploy/static/js/main.ce723715.chunk.js.map",
+    "runtime-main.js": "/React-Deploy/static/js/runtime-main.4262a3be.js",
+    "runtime-main.js.map": "/React-Deploy/static/js/runtime-main.4262a3be.js.map",
+    "static/js/2.2b9b2e73.chunk.js": "/React-Deploy/static/js/2.2b9b2e73.chunk.js",
+    "static/js/2.2b9b2e73.chunk.js.map": "/React-Deploy/static/js/2.2b9b2e73.chunk.js.map",
+    "static/js/3.3b266f11.chunk.js": "/React-Deploy/static/js/3.3b266f11.chunk.js",
+    "static/js/3.3b266f11.chunk.js.map": "/React-Deploy/static/js/3.3b266f11.chunk.js.map",
+    "index.html": "/React-Deploy/index.html",
+    "static/css/main.6cedd5e0.chunk.css.map": "/React-Deploy/static/css/main.6cedd5e0.chunk.css.map",
+    "static/js/2.2b9b2e73.chunk.js.LICENSE.txt": "/React-Deploy/static/js/2.2b9b2e73.chunk.js.LICENSE.txt",
+    "static/media/Font.css": "/React-Deploy/static/media/JetBrainsMono[wght].671d357d.ttf",
+    "static/media/bungo.png": "/React-Deploy/static/media/bungo.95e65692.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.4262a3be.js",
+    "static/js/2.2b9b2e73.chunk.js",
+    "static/css/main.6cedd5e0.chunk.css",
+    "static/js/main.ce723715.chunk.js"
+  ]
+}
