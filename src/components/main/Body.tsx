@@ -37,13 +37,13 @@ const Body = () => {
                 So, how did I learn programming? Well, that's a long story.
                 My "coding" journey started at the age of eight.
                 I was introduced to Scratch by my local school teachers; it allowed me to
-                fulfil part of my creativity and helped me making a step into the "world" of programming.
+                fulfill part of my creativity and helped me making a step into the "world" of programming.
             </TextBox>
 
             <TextBox id={"about-box-cpp"}>
                 Surprisingly, as I moved on I started watching C++ tutorials.
                 At the time, I was creating simple programs that would calculate or solve
-                certain problems. Sadly, since then I haven't felt in "love" with that language at all...
+                certain problems. Sadly, since then I haven't fallen in "love" with that language at all...
             </TextBox>
 
         </TextHeader>
