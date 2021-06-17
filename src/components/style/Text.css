@@ -24,6 +24,10 @@
     padding-left: 1vw;
 }
 
+.text-logo-img {
+    image-rendering: crisp-edges;
+}
+
 .text-logo.small {
     padding-right: 0vw;
     padding-left: 0vw;
