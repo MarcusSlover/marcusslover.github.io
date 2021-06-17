@@ -56,7 +56,7 @@ const Body = () => {
                     side={"left"}>
             Pretty much most of my creations have to do something with Minecraft.
             I absolutely love developing Minecraft plugins. Once, I even created my fully custom network!
-            There probably are even some YouTube videos about SloverTeam Network.
+            There are probably even some YouTube videos about SloverTeam Network.
 
             <TextBox id={"creations-box-fishing"}
                     img={"blue_fish"}>
