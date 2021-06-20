@@ -2,6 +2,40 @@
  * Copyright (c) 2021, MarcusSlover All rights reserved.
  */
 
+.text {
+    display: flex;
+    flex-direction: column;
+
+    color: white;
+    font-size: 1.5vmax;
+    font-family: Consolas, monospace;
+
+    border-block-style: solid;
+    border-block-width: 0.5vmax;
+
+    border-radius: 2vmax;
+    box-shadow: 1.5vmax 1.5vmax #283949;
+
+    margin: auto;
+    margin-top: 3vmax;
+
+    padding: 1.5vmax;
+    padding-bottom: 0.5vmax;
+    width: 55%;
+}
+
+.text-header {
+    color: black;
+
+    border-color: white;
+    border-style: solid;
+    border-radius: 1vw;
+
+    text-align: center;
+    font-size: 2.5vmax;
+}
+
+
 .text-box {
     transition-duration: 0.6s;
     transition-property: transform, box-shadow;
@@ -23,6 +57,8 @@
 
 .text-logo {
     padding-inline: 1vmax;
+    height: auto;
+    image-rendering: pixelated;
 }
 
 .text-logo-img {

@@ -99,48 +99,18 @@ const TextHeader: React.FC<TextHeaderProps> = ({
 export const createLogoStyle = (scale: number): CSSProperties => {
     return {
         width: scale + "vmax",
-        height: "auto",
-        imageRendering: "pixelated"
     }
 };
 
 export const createBackStyle = (color: string, background: string): CSSProperties => {
     return {
-        display: "flex",
-        flexDirection: "column",
-
-        color: "white",
-        fontSize: "1.5vmax",
-        fontFamily: "Consolas, monospace",
-
-        borderBlockStyle: "solid",
         borderBlockColor: color,
-        borderBlockWidth: "0.5vmax",
-
-        borderRadius: "2vmax",
         backgroundColor: background,
-        boxShadow: "1.5vmax 1.5vmax #283949",
-
-        margin: "auto",
-        marginTop: "3vmax",
-
-        padding: "1.5vmax",
-        paddingBottom: "0.5vmax",
-        width: "55%"
     }
 };
 
 export const createTitleStyle = (c: string): CSSProperties => {
     return {
-        color: "black",
-
-        borderColor: "white",
-        borderStyle: "solid",
-        borderRadius: "1vw",
-
-        textAlign: "center",
-        fontSize: "2.5vmax",
-
         backgroundColor: c
     }
 }
