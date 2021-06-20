@@ -98,7 +98,7 @@ const TextHeader: React.FC<TextHeaderProps> = ({
 
 export const createLogoStyle = (scale: number): CSSProperties => {
     return {
-        width: scale + "vw",
+        width: scale + "vmax",
         height: "auto",
         imageRendering: "pixelated"
     }
@@ -110,21 +110,21 @@ export const createBackStyle = (color: string, background: string): CSSPropertie
         flexDirection: "column",
 
         color: "white",
-        fontSize: "2vw",
+        fontSize: "1.5vmax",
         fontFamily: "Consolas, monospace",
 
         borderBlockStyle: "solid",
         borderBlockColor: color,
-        borderBlockWidth: "1vh",
+        borderBlockWidth: "0.5vmax",
 
-        borderRadius: "2vw",
+        borderRadius: "2vmax",
         backgroundColor: background,
-        boxShadow: "3vh 3vh #283949",
+        boxShadow: "1.5vmax 1.5vmax #283949",
 
         margin: "auto",
-        marginTop: "7vh",
+        marginTop: "3vmax",
         padding: "4vmin",
-        width: "75%"
+        width: "55%"
     }
 };
 
@@ -137,7 +137,7 @@ export const createTitleStyle = (c: string): CSSProperties => {
         borderRadius: "1vw",
 
         textAlign: "center",
-        fontSize: "3vw",
+        fontSize: "2.5vmax",
 
         backgroundColor: c
     }

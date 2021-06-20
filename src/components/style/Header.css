@@ -9,10 +9,10 @@
 
 .header-logo img {
     display: flex;
-    width: 3.5vw;
+    width: 3.5vmax;
     height: auto;
-    padding-right: 0.5vw;
-    padding-left: 0.25vw;
+    padding-right: 0.5vmax;
+    padding-left: 0.25vmax;
 
     transition: 2s;
     transition-property: transform;
@@ -25,13 +25,13 @@
 
 #header {
     display: flex;
-    padding-top: 0.5vh;
-    padding-bottom: 0.5vh;
+    padding-top: 0.25vmax;
+    padding-bottom: 0.25vmax;
 
     justify-content: space-evenly;
 
     /* Font style */
-    font-size: 2vw;
+    font-size: 1.75vmax;
     font-family: "JetBrains Mono", monospace;
     text-decoration: none;
 
@@ -61,7 +61,7 @@
     text-decoration: none;
     transition: ease-in 0.3s;
     transition-property: color, background-color, transform;
-    padding: 1vh;
+    padding: 0.5vmax;
     margin-right: 0.5%;
 }
 

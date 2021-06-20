@@ -8,20 +8,21 @@
 }
 
 .text-box:hover {
-    transform: translateY(-0.5vh);
-    box-shadow: 3vh 3vh #283949;
+    transform: translateY(-0.5vmax);
+    box-shadow: 1.5vmax 1.5vmax #283949;
 }
 
 .text-section {
     display: flex;
-    margin: auto;
-    margin-top: 4vh;
+    margin-top: 1.5vmax;
+}
+
+.text-description {
+    margin-block: 1vmax;
 }
 
 .text-logo {
-    margin: auto;
-    padding-right: 1vw;
-    padding-left: 1vw;
+    padding-inline: 1vmax;
 }
 
 .text-logo-img {
@@ -29,15 +30,9 @@
 }
 
 .text-logo.small {
-    padding-right: 0vw;
-    padding-left: 0vw;
-}
-
-.text-logo img:hover {
-    border-radius: 20%;
-    background-color: #44607b;
+    padding-right: 0;
+    padding-left: 0;
 }
 
 .text-title {
-    display: block;
 }

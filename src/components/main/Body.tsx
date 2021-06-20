@@ -24,7 +24,6 @@ const Body = () => {
                     title={"About me"}
                     color={"#1dc26a"}
                     img={"slover"}
-                    imgSize={10}
                     side={"left"}>
             Hi, I'm Marcus and I live in Warsaw.
             <br/>
@@ -52,7 +51,6 @@ const Body = () => {
                     title={"My Creations"}
                     color={"#0cabc9"}
                     img={"creations"}
-                    imgSize={10}
                     side={"left"}>
             Pretty much most of my creations have to do something with Minecraft.
             I absolutely love developing Minecraft plugins. Once, I even created my fully custom network!
