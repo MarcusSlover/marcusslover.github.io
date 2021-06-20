@@ -10,12 +10,13 @@ export interface TextBoxProps {
     id: string;
     img?: string;
     imgSize?: number;
+    github?: string;
     title?: string;
     color?: string;
     background?: string;
 }
 
-const TextBox: React.FC<TextBoxProps> = ({id, img, imgSize, color, background, children}) => {
+const TextBox: React.FC<TextBoxProps> = ({id, img, imgSize,github, color, background, children}) => {
     const backStyle = createBackStyle(color || Color.color, background || Color.backgroundColor);
     const logoStyle = createLogoStyle(imgSize || 7);
     const image = img !== undefined ? require("../../style/img/" + img + ".png").default : undefined;

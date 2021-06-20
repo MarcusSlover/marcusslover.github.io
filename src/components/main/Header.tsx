@@ -12,8 +12,8 @@ const Header = () => {
         </span>
         <a href="#about" className="about-button header-button">About</a>
         <a href="#creations" className="creations-button header-button">Creations</a>
-        <a href="https://github.com/MarcusSlover" className="github-button header-button">GitHub</a>
         <a href="#friends" className="friends-button header-button">Friends</a>
+        <a href="https://github.com/MarcusSlover" className="github-button header-button">GitHub</a>
     </div>;
 }
 
