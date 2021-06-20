@@ -123,7 +123,9 @@ export const createBackStyle = (color: string, background: string): CSSPropertie
 
         margin: "auto",
         marginTop: "3vmax",
-        padding: "4vmin",
+
+        padding: "1.5vmax",
+        paddingBottom: "0.5vmax",
         width: "55%"
     }
 };

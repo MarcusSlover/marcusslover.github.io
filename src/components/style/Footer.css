@@ -1,0 +1,21 @@
+/*
+ * Copyright (c) 2021, MarcusSlover All rights reserved.
+ */
+
+#footer {
+    font-size: 1vmax;
+    font-family: "JetBrains Mono", monospace;
+    font-style: italic;
+    text-align: center;
+
+    border-top-style: solid;
+    border-color: #ecf0f1;
+
+    /* Background animation */
+    background: linear-gradient(90deg, #2980b9, #8fe9ff);
+    background-size: 400% 400%;
+    animation: gradient 10s ease infinite;
+
+    padding: 1vmax;
+
+}
