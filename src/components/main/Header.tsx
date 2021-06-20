@@ -12,7 +12,7 @@ const Header = () => {
         </span>
         <a href="#about" className="about header-button">About</a>
         <a href="#creations" className="creations header-button">Creations</a>
-        <a href="#github" className="github header-button">GitHub</a>
+        <a href="https://github.com/MarcusSlover" className="github header-button">GitHub</a>
         <a href="#friends" className="friends header-button">Friends</a>
     </div>;
 }
