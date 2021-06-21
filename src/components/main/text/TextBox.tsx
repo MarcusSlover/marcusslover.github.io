@@ -21,7 +21,8 @@ const TextBox: React.FC<TextBoxProps> = ({id, img, imgSize, github, color, backg
     const backStyle = createBackStyle(color || Color.color, background || Color.backgroundColor);
     const logoStyle = createLogoStyle(imgSize || 7);
     const image = img !== undefined ? require("../../style/img/" + img + ".png").default : undefined;
-    const boxLogo = <span className="text-logo"><img src={image} className={"text-logo-img"} style={logoStyle}/></span>;
+    const boxLogo = <span className="text-logo"><img src={image} alt={"Owned by MarcusSlover"}
+                                                     className={"text-logo-img"} style={logoStyle}/></span>;
 
     return <div id={id}>
         <section className={"text-box"} style={backStyle}>

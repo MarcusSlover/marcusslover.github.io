@@ -11,7 +11,7 @@
     font-family: Consolas, monospace;
 
     border-block-style: solid;
-    border-block-width: 0.35vmax;
+    border-block-width: 0.5vmax;
 
     border-radius: 2vmax;
     box-shadow: 1.5vmax 1.5vmax #283949;
@@ -36,7 +36,7 @@
     display: flex;
     flex-direction: row;
     font-size: 1.25vmax;
-    border-block-width: 0.25vmax;
+    border-block-width: 0.33vmax;
 
     border-top-style: none;
     border-block-style: solid;
