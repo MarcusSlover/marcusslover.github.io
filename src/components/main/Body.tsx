@@ -104,7 +104,7 @@ const Body = () => {
                 <b><u>SloverHologram</u></b>
                 <br/>
                 A simple Spigot plugin that allows creating custom floating texts (commonly known as holograms).
-                This plugin was designed to work on Minecraft verison: 1.12.2
+                This plugin was designed to work on Minecraft version: 1.12.2
             </TextBox>
 
         </TextHeader>

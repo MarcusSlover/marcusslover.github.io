@@ -4,7 +4,7 @@
 
 import React, {CSSProperties, ReactElement, ReactNodeArray} from 'react';
 import '../../style/Text.css'
-import {increaseBrightness, Color} from "./ColorUtil";
+import {Color, increaseBrightness} from "./ColorUtil";
 
 export interface TextHeaderProps {
     id: string;
@@ -27,7 +27,7 @@ const TextHeader: React.FC<TextHeaderProps> = ({
                                                    color,
                                                    titleColor,
                                                    backColor,
-    backgroundColor,
+                                                   backgroundColor,
                                                    children
                                                }) => {
     const image = img !== undefined ? require("../../style/img/" + img + ".png").default : undefined;

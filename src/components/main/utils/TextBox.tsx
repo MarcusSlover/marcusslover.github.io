@@ -16,7 +16,7 @@ export interface TextBoxProps {
     background?: string;
 }
 
-const TextBox: React.FC<TextBoxProps> = ({id, img, imgSize,github, color, background, children}) => {
+const TextBox: React.FC<TextBoxProps> = ({id, img, imgSize, github, color, background, children}) => {
     const backStyle = createBackStyle(color || Color.color, background || Color.backgroundColor);
     const logoStyle = createLogoStyle(imgSize || 7);
     const image = img !== undefined ? require("../../style/img/" + img + ".png").default : undefined;
