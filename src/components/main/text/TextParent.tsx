@@ -6,8 +6,9 @@ import React, {ReactElement, ReactNodeArray} from 'react';
 import '../../style/Text.css'
 import {Color, increaseBrightness} from "../utils/ColorUtil";
 import {createBackStyle, createLogoStyle, createTitleStyle} from "./TextUtil";
+import TextChildProps from "./TextChild";
 
-export interface TextHeaderProps {
+export interface TextParentProps {
     id: string;
     title?: string;
     img?: string;
@@ -19,7 +20,7 @@ export interface TextHeaderProps {
     backgroundColor?: string;
 }
 
-const TextHeader: React.FC<TextHeaderProps> = ({
+const TextParent: React.FC<TextParentProps> = ({
                                                    id,
                                                    title,
                                                    img,
@@ -40,19 +41,22 @@ const TextHeader: React.FC<TextHeaderProps> = ({
     }
     const logoStyle = createLogoStyle(imgSize || 10);
     const bodyStyle = createBackStyle(backColor || Color.color, backgroundColor || Color.backgroundColor);
+    bodyStyle.textAlign = side;
+
     const titleStyle = createTitleStyle(titleColor || Color.titleColor);
     const childColor = increaseBrightness(backColor || Color.color, 40);
-    const childBackgroundColor = increaseBrightness(Color.backgroundColor, 5);
 
-    const boxTitle = title !== undefined ? <div className={"text-title"}>{title}</div> : undefined;
-    const boxLogo = <span className="text-logo"><img src={image} alt={"Owned by MarcusSlover"}
-                                                     className={"text-logo-img"} style={logoStyle}/></span>;
+    const childBackgroundColor = increaseBrightness(Color.backgroundColor, 5);
+    const boxTitle = title !== undefined ? <div className={"title"}>{title}</div> : undefined;
+    const boxLogo = <span className={"logo"}> <img src={image} alt={"Owned by MarcusSlover"} style={logoStyle}/></span>;
 
     let extraChildren: ReactNodeArray = []
     const filteredChildren = React.Children.map(children, ((child, index) => {
         if (React.isValidElement(child)) {
-            if (child.props.id) {
-                let reactElement: ReactElement = React.cloneElement(child,
+            const element: ReactElement = child;
+            const {type} = element;
+            if (type === TextChildProps) {
+                const reactElement: ReactElement = React.cloneElement(child,
                     {
                         color: childColor,
                         background: childBackgroundColor
@@ -63,39 +67,28 @@ const TextHeader: React.FC<TextHeaderProps> = ({
         }
         return child;
     }))
-    const boxDescription = <span className="text-description">{filteredChildren}</span>;
+    const boxDescription = <span className="description">{filteredChildren}</span>;
 
-    bodyStyle.textAlign = side;
+    const bodyElement = (alignment === "left") ?
+        <span className={"body"}>
+            {image !== undefined && boxLogo}
+            {boxDescription}
+        </span>
+        :
+        <span className={"body"}>
+            {boxDescription}
+            {image !== undefined && boxLogo}
+        </span>;
 
-    if (alignment === "left") {
-        return <div id={id}>
-            <section id={"text-" + id} className={"text"} style={bodyStyle}>
-                <span className={"text-header"} style={titleStyle}>
-                    {boxTitle !== undefined && boxTitle}
-                </span>
+    const headerElement = <span className={"header"} style={titleStyle}>{boxTitle !== undefined && boxTitle}</span>;
 
-                <span className={"text-section"}>
-                    {image !== undefined && boxLogo}
-                    {boxDescription}
-                </span>
-                {extraChildren}
-            </section>
-        </div>;
-    } else {
-        return <div id={id}>
-            <section id={"text-" + id} className={"text"} style={bodyStyle}>
-                <span className={"text-header"} style={titleStyle}>
-                    {boxTitle !== undefined && boxTitle}
-                </span>
-
-                <span className={"text-section"}>
-                    {boxDescription}
-                    {image !== undefined && boxLogo}
-                </span>
-                {extraChildren}
-            </section>
-        </div>;
-    }
+    return <div id={id}>
+        <section className={"text"} style={bodyStyle}>
+            {headerElement}
+            {bodyElement}
+            {extraChildren}
+        </section>
+    </div>;
 }
 
-export default TextHeader;
+export default TextParent;

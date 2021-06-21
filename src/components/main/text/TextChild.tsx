@@ -7,7 +7,7 @@ import '../../style/Text.css'
 import {Color} from "../utils/ColorUtil";
 import {createLogoStyle} from "./TextUtil";
 
-export interface TextBoxProps {
+export interface TextChildProps {
     id: string;
     img?: string;
     imgSize?: number;
@@ -15,20 +15,18 @@ export interface TextBoxProps {
     title?: string;
     color?: string;
     background?: string;
+    sections?: boolean;
 }
 
-const TextBox: React.FC<TextBoxProps> = ({id, img, imgSize, github, color, background, children}) => {
+const TextChild: React.FC<TextChildProps> = ({id, img, imgSize, github, color, background, sections, children}) => {
     const backStyle = createBackStyle(color || Color.color, background || Color.backgroundColor);
     const logoStyle = createLogoStyle(imgSize || 7);
     const image = img !== undefined ? require("../../style/img/" + img + ".png").default : undefined;
-    const boxLogo = <span className="text-logo"><img src={image} alt={"Owned by MarcusSlover"}
-                                                     className={"text-logo-img"} style={logoStyle}/></span>;
+    const boxLogo = <span className="logo"><img src={image} alt={"Owned by MarcusSlover"} style={logoStyle}/></span>;
 
     return <div id={id}>
         <section className={"text-box"} style={backStyle}>
-            <section className={"text-logo small"}>
-                {image !== undefined && boxLogo}
-            </section>
+            {image !== undefined && boxLogo}
             <section>
                 {children}
             </section>
@@ -43,5 +41,5 @@ export const createBackStyle = (color: string, background?: string): CSSProperti
     }
 };
 
-export default TextBox;
+export default TextChild;
 

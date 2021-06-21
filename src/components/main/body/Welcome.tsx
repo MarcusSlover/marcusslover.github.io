@@ -2,12 +2,12 @@
  * Copyright (c) 2021, MarcusSlover All rights reserved.
  */
 
-import TextHeader from "../text/TextHeader";
+import TextParent from "../text/TextParent";
 import React from "react";
 
 const Welcome = () => {
     return <>
-        <TextHeader id={"welcome"}
+        <TextParent id={"welcome"}
                     title={"Welcome dear visitor!"}
                     color={"#76e111"}
                     img={"welcome"}
@@ -16,7 +16,7 @@ const Welcome = () => {
             <br/>
             Here you can discover quite a few things about me and my projects.
             You can use the navigator above or your mouse wheel to learn more about me!
-        </TextHeader>
+        </TextParent>
     </>;
 }
 

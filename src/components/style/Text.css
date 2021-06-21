@@ -21,7 +21,7 @@
     width: 55%;
 }
 
-.text-header {
+.text .header {
     color: black;
 
     border-color: white;
@@ -55,33 +55,25 @@
     box-shadow: 1vmax 1vmax #283949;
 }
 
-.text-section {
+.text .body {
     display: flex;
     margin-top: 1.5vmax;
 }
 
-.text-description {
+.text .description {
     margin-block: 1vmax;
 }
 
-.text-logo {
+.text .logo {
     padding-inline: 1vmax;
     height: auto;
     image-rendering: pixelated;
 }
 
-.text-logo-img {
-    image-rendering: crisp-edges;
+.text .logo .img {
+    image-rendering: crisp-edges
 }
 
-.text-logo.small {
-    padding-right: 0;
-    padding-left: 0;
-}
-
-.text-title {
-}
-
-#creations {
+#friends {
     padding-bottom: 3vmax;
 }
