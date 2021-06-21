@@ -2,8 +2,8 @@
  * Copyright (c) 2021, MarcusSlover All rights reserved.
  */
 
-import TextBox from "../utils/TextBox";
-import TextHeader from "../utils/TextHeader";
+import TextBox from "../text/TextBox";
+import TextHeader from "../text/TextHeader";
 import React from "react";
 
 const AboutMe = () => {

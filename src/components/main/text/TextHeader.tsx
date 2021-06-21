@@ -2,9 +2,10 @@
  * Copyright (c) 2021, MarcusSlover All rights reserved.
  */
 
-import React, {CSSProperties, ReactElement, ReactNodeArray} from 'react';
+import React, {ReactElement, ReactNodeArray} from 'react';
 import '../../style/Text.css'
-import {Color, increaseBrightness} from "./ColorUtil";
+import {Color, increaseBrightness} from "../utils/ColorUtil";
+import {createBackStyle, createLogoStyle, createTitleStyle} from "./TextUtil";
 
 export interface TextHeaderProps {
     id: string;
@@ -93,25 +94,6 @@ const TextHeader: React.FC<TextHeaderProps> = ({
                 {extraChildren}
             </section>
         </div>;
-    }
-}
-
-export const createLogoStyle = (scale: number): CSSProperties => {
-    return {
-        width: scale + "vmax",
-    }
-};
-
-export const createBackStyle = (color: string, background: string): CSSProperties => {
-    return {
-        borderBlockColor: color,
-        backgroundColor: background,
-    }
-};
-
-export const createTitleStyle = (c: string): CSSProperties => {
-    return {
-        backgroundColor: c
     }
 }
 

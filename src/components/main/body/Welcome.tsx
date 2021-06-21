@@ -2,7 +2,7 @@
  * Copyright (c) 2021, MarcusSlover All rights reserved.
  */
 
-import TextHeader from "../utils/TextHeader";
+import TextHeader from "../text/TextHeader";
 import React from "react";
 
 const Welcome = () => {

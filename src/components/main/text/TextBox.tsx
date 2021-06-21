@@ -4,7 +4,8 @@
 
 import React, {CSSProperties} from 'react';
 import '../../style/Text.css'
-import {Color} from "./ColorUtil";
+import {Color} from "../utils/ColorUtil";
+import {createLogoStyle} from "./TextUtil";
 
 export interface TextBoxProps {
     id: string;
@@ -34,36 +35,10 @@ const TextBox: React.FC<TextBoxProps> = ({id, img, imgSize, github, color, backg
     </div>
 }
 
-export const createLogoStyle = (scale: number): CSSProperties => {
-    return {
-        width: scale + "vmax",
-        height: "auto",
-        imageRendering: "pixelated"
-    }
-};
-
 export const createBackStyle = (color: string, background?: string): CSSProperties => {
     return {
-        display: "flex",
-        flexDirection: "row",
-
-        color: "white",
-        fontSize: "1.25vmax",
-        fontFamily: "Consolas, monospace",
-
-        borderTopStyle: "none",
-        borderBlockStyle: "solid",
         borderBlockColor: color,
-        borderBlockWidth: "0.5vmax",
-
-        borderRadius: "2vmax",
         backgroundColor: background,
-
-        margin: "auto",
-        marginTop: "1vmax",
-        marginBottom: "1vmax",
-        padding: "3vmin",
-        width: "75%"
     }
 };
 

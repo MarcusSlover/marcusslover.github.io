@@ -10,10 +10,10 @@ const Header = () => {
         <span className="logo header-logo">
             <img src={marcusHead}/>
         </span>
-        <a href="#about" className="header-button">About</a>
-        <a href="#creations" className="header-button">Creations</a>
-        <a href="#friends" className="header-button">Friends</a>
-        <a href="https://github.com/MarcusSlover" className="header-button">GitHub</a>
+        <a href={"#about"} className="header-button">About</a>
+        <a href={"#creations"} className="header-button">Creations</a>
+        <a href={"#friends"} className="header-button">Friends</a>
+        <a href={"https://github.com/MarcusSlover"} className="header-button">GitHub</a>
     </div>;
 }
 

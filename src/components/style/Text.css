@@ -11,16 +11,13 @@
     font-family: Consolas, monospace;
 
     border-block-style: solid;
-    border-block-width: 0.5vmax;
+    border-block-width: 0.35vmax;
 
     border-radius: 2vmax;
     box-shadow: 1.5vmax 1.5vmax #283949;
 
-    margin: auto;
-    margin-top: 3vmax;
-
-    padding: 1.5vmax;
-    padding-bottom: 0.5vmax;
+    margin: 3vmax auto auto;
+    padding: 1.5vmax 1.5vmax 0.5vmax;
     width: 55%;
 }
 
@@ -35,8 +32,20 @@
     font-size: 2.5vmax;
 }
 
-
 .text-box {
+    display: flex;
+    flex-direction: row;
+    font-size: 1.25vmax;
+    border-block-width: 0.25vmax;
+
+    border-top-style: none;
+    border-block-style: solid;
+    border-radius: 2vmax;
+
+    margin: 0.25vmax auto 1.25vmax;
+    padding: 1.5vmax;
+    width: 75%;
+
     transition-duration: 0.6s;
     transition-property: transform, box-shadow;
 }
