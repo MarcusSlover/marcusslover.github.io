@@ -43,7 +43,7 @@
 
 .text-box:hover {
     transform: scale(1.05);
-    box-shadow: 1.5vmax 1.5vmax #283949;
+    box-shadow: 1vmax 1vmax #283949;
 }
 
 .text-section {
