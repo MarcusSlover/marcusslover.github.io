@@ -74,6 +74,29 @@
     image-rendering: crisp-edges
 }
 
+.text-section {
+    display: flex;
+    font-size: 1.25vmax;
+    border-block-width: 0.33vmax;
+
+    border-color: #7289d9;
+    border-top-style: none;
+    border-block-style: solid;
+    border-radius: 2vmax;
+
+    margin: 0.25vmax 1.5vmax 1.5vmax;
+    padding: 2vmax;
+    width: 25%;
+
+    transition-duration: 0.6s;
+    transition-property: transform, box-shadow;
+}
+
+.text-section:hover {
+    transform: scale(1.05);
+    box-shadow: 1vmax 1vmax #283949;
+}
+
 #friends {
     padding-bottom: 3vmax;
 }

@@ -24,12 +24,16 @@ const TextChild: React.FC<TextChildProps> = ({id, img, imgSize, github, color, b
     const image = img !== undefined ? require("../../style/img/" + img + ".png").default : undefined;
     const boxLogo = <span className="logo"><img src={image} alt={"Owned by MarcusSlover"} style={logoStyle}/></span>;
 
+    if (sections) {
+        return <div id={id}>
+            {children}
+        </div>
+    }
+
     return <div id={id}>
         <section className={"text-box"} style={backStyle}>
             {image !== undefined && boxLogo}
-            <section>
-                {children}
-            </section>
+            <section>{children}</section>
         </section>
     </div>
 }

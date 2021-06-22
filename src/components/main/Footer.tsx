@@ -5,8 +5,10 @@ import React from "react";
 import "../style/Footer.css"
 
 const Footer = () => {
+    const year = new Date().getFullYear();
+
     return <div id={"footer"}>
-        MarcusSlover 2021 &copy; All rights reserved.
+        MarcusSlover {year} &copy; All rights reserved.
     </div>
 }
 
