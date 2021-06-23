@@ -83,21 +83,21 @@ export const friends: Array<Friend> = [
     },
     {
         name: "funtodead",
-        job: "Empty",
+        job: "Developer",
         clientId: "299141095605141504",
         avatarHash: "095d8f0ebc0f1abab6220d8a475d3ab6",
         tag: "8891"
     },
     {
         name: "cae",
-        job: "Empty",
+        job: "Piano Player",
         clientId: "852694671045165126",
         avatarHash: "1d2f02e167c4edf5a50c8083f7daeb58",
         tag: "4799"
     },
     {
         name: "Chloe",
-        job: "Empty",
+        job: "Singer",
         clientId: "839315974075318282",
         avatarHash: "d486591a3ad17044abbfd2ac2bd0b844",
         tag: "❤ Chloe ❤#9631"
@@ -122,5 +122,47 @@ export const friends: Array<Friend> = [
         clientId: "246778942323818506",
         avatarHash: "13f5ae78497b419ba816b6b2102d8d19",
         tag: "1212"
+    },
+    {
+        name: "Leapy™",
+        job: "Gamer",
+        clientId: "529496220243197952",
+        avatarHash: "2f5e8b53f28a3aa6854d886cd4d4c356",
+        tag: "7629"
+    },
+    {
+        name: "reason",
+        job: "Developer",
+        clientId: "511653192942092289",
+        avatarHash: "d8bc355374a3b7df8c726b9b34850934",
+        tag: "0949"
+    },
+    {
+        name: "flops",
+        job: "Streamer",
+        clientId: "299698735879946262",
+        avatarHash: "e078195736011a9280b5c1e37679cf97",
+        tag: "9299"
+    },
+    {
+        name: "Luify",
+        job: "Streamer",
+        clientId: "551323138768764939",
+        avatarHash: "c46763dcd54f3cd5a349508f54c29606",
+        tag: "7127"
+    },
+    {
+        name: "Ultra741",
+        job: "Developer",
+        clientId: "449910090225549312",
+        avatarHash: "a_cc515a944c4be816115e199cc9d8f43d",
+        tag: "0001"
+    },
+    {
+        name: "Chickenfan",
+        job: "Gamer",
+        clientId: "299851461402296320",
+        avatarHash: "ee6fb1eb32ba3106bf9c0840b2dd7601",
+        tag: "1541"
     }
 ];

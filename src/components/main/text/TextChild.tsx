@@ -51,15 +51,16 @@ const TextChild: React.FC<TextChildProps> = ({id, img, imgSize, github, color, b
     }));
 
     return <div id={id}>
+        {extraChildren.length > 0 &&
+        <section className={"layout"}>
+            {extraChildren}
+        </section>
+        }
+
         {(filteredChildren !== undefined && filteredChildren !== null && filteredChildren.length) > 0 &&
         <section className={"text-box"} style={backStyle}>
             {image !== undefined && boxLogo}
             <section>{filteredChildren}</section>
-        </section>
-        }
-        {extraChildren.length > 0 &&
-        <section className={"layout"}>
-            {extraChildren}
         </section>
         }
 

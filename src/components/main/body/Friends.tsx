@@ -36,8 +36,12 @@ const Friends = () => {
             As I love my friends very much, I've decided to make a spot for them here on my website.
             They are always there for me when I need them. So, I believe they deserve to be here as well.
 
-            <TextChild id={"friend-sections"}>{sections}</TextChild>
-
+            <TextChild id={"friend-sections"}>
+                {sections}
+                If you believe you should be on this list, please message me on Discord.
+                I apologize if I "forgot" to put you here. Thanks! ❤️
+                <i> psst.. The list was sorted alphabetically...</i>
+            </TextChild>
         </TextParent>
     </>;
 };
