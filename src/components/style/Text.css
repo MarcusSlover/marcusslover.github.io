@@ -74,29 +74,45 @@
     image-rendering: crisp-edges
 }
 
-.text-section {
+.layout {
+    margin: auto;
     display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.text .section {
+    display: flex;
+
     font-size: 1.25vmax;
     border-block-width: 0.33vmax;
 
-    border-color: #7289d9;
     border-top-style: none;
     border-block-style: solid;
     border-radius: 2vmax;
 
-    margin: 0.25vmax 1.5vmax 1.5vmax;
-    padding: 2vmax;
-    width: 25%;
+    margin: 0.26vmax 1vmax 1.5vmax 1.4vmax;
+    padding-block: 0.5vmax;
+    width: 45%;
 
     transition-duration: 0.6s;
     transition-property: transform, box-shadow;
 }
 
-.text-section:hover {
+.text .section:hover {
     transform: scale(1.05);
     box-shadow: 1vmax 1vmax #283949;
 }
 
+.text .section .info {
+    margin-top: 0.5vmax;
+}
+
+.avatar .logo {
+    border-radius: 50%;
+    image-rendering: crisp-edges;
+}
+
 #friends {
-    padding-bottom: 3vmax;
+    padding-bottom: 4vmax;
 }

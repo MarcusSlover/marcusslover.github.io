@@ -19,7 +19,7 @@ const MyCreations = () => {
 
             <TextChild id={"creations-box-corpus"}
                        img={"corpusmc"}>
-                <b><u>CorpusMc</u></b>
+                <b>CorpusMc</b>
                 <br/>
                 My biggest project of all time.
                 It's a Minecraft network containing lots of custom game modes and mechanics.
@@ -28,7 +28,7 @@ const MyCreations = () => {
 
             <TextChild id={"creations-box-fishing"}
                        img={"blue_fish"}>
-                <b><u>FishingPlus</u></b>
+                <b>FishingPlus</b>
                 <br/>
                 A Minecraft plugin that makes fishing better & more interesting!
                 Adds tons of new content and quests. Get your rods and start working!
@@ -37,14 +37,14 @@ const MyCreations = () => {
 
             <TextChild id={"creations-box-caverns"}
                        img={"emerald"}>
-                <b><u>Caverns</u></b>
+                <b>Caverns</b>
                 <br/>
                 The Caverns is a plugin based on one of the games from a Minecraft server called DiamondFire.
             </TextChild>
 
             <TextChild id={"creations-fruits"}
                        img={"strawberries"}>
-                <b><u>SloverFruits</u></b>
+                <b>SloverFruits</b>
                 <br/>
                 A Minecraft Mod that adds new eatable items to the game.
                 The mod aims to provide the players with more eatable content
@@ -53,7 +53,7 @@ const MyCreations = () => {
 
             <TextChild id={"creations-box-survival"}
                        img={"campfire"}>
-                <b><u>SloverSurvivalReborn</u></b>
+                <b>SloverSurvivalReborn</b>
                 <br/>
                 It is an open-source Minecraft plugin that attempts to improve your survival experience.
                 The plugin has lots of custom features that hopefully makes you enjoy the game more.
@@ -62,7 +62,7 @@ const MyCreations = () => {
 
             <TextChild id={"creations-hologram"}
                        img={"sign"}>
-                <b><u>SloverHologram</u></b>
+                <b>SloverHologram</b>
                 <br/>
                 A simple Spigot plugin that allows creating custom floating texts (commonly known as holograms).
                 This plugin was designed to work on Minecraft version: 1.12.2

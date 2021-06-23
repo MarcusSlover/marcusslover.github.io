@@ -48,9 +48,9 @@ const TextParent: React.FC<TextParentProps> = ({
 
     const childBackgroundColor = increaseBrightness(Color.backgroundColor, 5);
     const boxTitle = title !== undefined ? <div className={"title"}>{title}</div> : undefined;
-    const boxLogo = <span className={"logo"}> <img src={image} alt={"Owned by MarcusSlover"} style={logoStyle}/></span>;
+    const boxLogo = <span className={"logo"}> <img draggable={false} src={image} alt={"Owned by MarcusSlover"} style={logoStyle}/></span>;
 
-    let extraChildren: ReactNodeArray = []
+    const extraChildren: ReactNodeArray = [];
     const filteredChildren = React.Children.map(children, ((child, index) => {
         if (React.isValidElement(child)) {
             const element: ReactElement = child;
@@ -66,21 +66,21 @@ const TextParent: React.FC<TextParentProps> = ({
             }
         }
         return child;
-    }))
-    const boxDescription = <span className="description">{filteredChildren}</span>;
+    }));
+    const boxDescription = <div className="description">{filteredChildren}</div>;
 
     const bodyElement = (alignment === "left") ?
-        <span className={"body"}>
+        <div className={"body"}>
             {image !== undefined && boxLogo}
             {boxDescription}
-        </span>
+        </div>
         :
-        <span className={"body"}>
+        <div className={"body"}>
             {boxDescription}
             {image !== undefined && boxLogo}
-        </span>;
+        </div>;
 
-    const headerElement = <span className={"header"} style={titleStyle}>{boxTitle !== undefined && boxTitle}</span>;
+    const headerElement = <div className={"header"} style={titleStyle}>{boxTitle !== undefined && boxTitle}</div>;
 
     return <div id={id}>
         <section className={"text"} style={bodyStyle}>
