@@ -35,6 +35,10 @@ const Friends = () => {
                     side={"left"}>
             As I love my friends very much, I've decided to make a spot for them here on my website.
             They are always there for me when I need them. So, I believe they deserve to be here as well.
+
+            <TextChild id={"friend-sections"}>
+                {sections}
+            </TextChild>
         </TextParent>
     </>;
 };
