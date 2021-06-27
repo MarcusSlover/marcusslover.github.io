@@ -39,34 +39,40 @@
     border-color: #ecf0f1;
 
     /* Background animation */
-    background: linear-gradient(90deg, #2980b9, #8fe9ff);
-    background-size: 400% 400%;
-    animation: gradient 10s ease infinite;
+    background-image: url("./img/header_tile.png");
+    image-rendering: pixelated;
+    background-size: 10vmax;
+    animation: gradient 15s infinite;
 }
 
 @keyframes gradient {
     0% {
-        background-position: 0 50%;
+        background-position: 0 100%;
     }
     50% {
-        background-position: 100% 50%;
+        background-position: 25% 200%;
     }
     100% {
-        background-position: 0 50%;
+        background-position: 0 100%;
     }
 }
 
 .header-button {
-    color: black;
+    background: linear-gradient(
+            rgba(64, 110, 137, 0.5),
+            rgba(47, 76, 103, 0.75),
+            rgb(34, 48, 68));
+    color: #ffffff;
+
     text-decoration: none;
-    transition: ease-in 0.3s;
+    transition: 0.5s;
     transition-property: color, background-color, transform;
     padding: 0.5vmax;
+    padding-inline: 1vmax;
     margin-right: 0.5%;
 }
 
 .header-button:hover {
-    color: #ffffff;
-    background-color: #21547d;
+    color: #000000;
 }
 

@@ -9,6 +9,8 @@
 html, body, #root {
     background-image: url("./img/tile.png");
     background-repeat: repeat;
+    background-size: 3vmax;
+
     height: 100%;
 
     -webkit-touch-callout: none;
