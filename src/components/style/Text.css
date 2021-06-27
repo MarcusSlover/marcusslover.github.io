@@ -8,7 +8,7 @@
 
     color: white;
     font-size: 1.5vmax;
-    font-family: Consolas, monospace;
+    font-family: "JetBrains Mono Light", monospace;
 
     border-block-style: solid;
     border-block-width: 0.5vmax;
@@ -16,8 +16,8 @@
     border-radius: 2vmax;
     box-shadow: 1.5vmax 1.5vmax #283949;
 
-    margin: 3vmax auto auto;
-    padding: 1.5vmax 1.5vmax 0.5vmax;
+    margin: 3vmax auto 3.5vmax;
+    padding: 1.5vmax 1vmax 0.5vmax;
     width: 55%;
 }
 
@@ -52,12 +52,12 @@
 
 .text-box:hover {
     transform: scale(1.05);
-    box-shadow: 1vmax 1vmax #283949;
+    box-shadow: 0.75vmax 0.75vmax rgba(40, 57, 73, 0.5);
 }
 
 .text .body {
     display: flex;
-    margin-top: 1.5vmax;
+    margin-top: 0.75vmax;
 }
 
 .text .description {
@@ -101,7 +101,7 @@
 
 .text .section:hover {
     transform: scale(1.05);
-    box-shadow: 1vmax 1vmax #283949;
+    box-shadow: 0.75vmax 0.75vmax rgba(40, 57, 73, 0.5);
 }
 
 .text .section .info {

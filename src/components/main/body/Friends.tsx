@@ -30,7 +30,7 @@ const Friends = () => {
     return <>
         <TextParent id={"friends"}
                     title={"My Friends"}
-                    color={"#1180e1"}
+                    color={"#116fe1"}
                     img={"turtle"}
                     side={"left"}>
             As I love my friends very much, I've decided to make a spot for them here on my website.

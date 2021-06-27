@@ -1,14 +1,14 @@
 /*
  * Copyright (c) 2021, MarcusSlover All rights reserved.
  */
-
 * {
     margin: 0;
     padding: 0;
 }
 
 html, body, #root {
-    background: #2c3e50;
+    background-image: url("./img/tile.png");
+    background-repeat: repeat;
     height: 100%;
 
     -webkit-touch-callout: none;
