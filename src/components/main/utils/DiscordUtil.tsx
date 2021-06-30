@@ -36,7 +36,7 @@ export const friends: Array<Friend> = [
         name: "AlexDorian7",
         job: "Developer",
         clientId: "286688479755239434",
-        avatarHash: "6276feab61466968d01e874cb0034dba",
+        avatarHash: "ae94e4ead0f768bc6f9a13b1db173bc5",
         tag: "ΑΛΕΞ#0495"
     },
     {
@@ -99,8 +99,8 @@ export const friends: Array<Friend> = [
         name: "Chloe",
         job: "Egirl",
         clientId: "839315974075318282",
-        avatarHash: "d486591a3ad17044abbfd2ac2bd0b844",
-        tag: "❤ Chloe ❤#9631"
+        avatarHash: "b68d4251cd78abb332f96f4ed9cc4a53",
+        tag: "❤ Chloe ❤#8008"
     },
     {
         name: "pjesek",
@@ -155,7 +155,7 @@ export const friends: Array<Friend> = [
         name: "Ultra741",
         job: "Developer",
         clientId: "449910090225549312",
-        avatarHash: "a_cc515a944c4be816115e199cc9d8f43d",
+        avatarHash: "a_b6c87573bf5a556a41fb794859989136",
         tag: "0001"
     },
     {
