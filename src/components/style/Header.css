@@ -39,10 +39,9 @@
     border-color: #ecf0f1;
 
     /* Background animation */
-    background-image: url("./img/header_tile.png");
-    image-rendering: pixelated;
-    background-size: 10vmax;
-    animation: gradient 15s infinite;
+    background: linear-gradient(90deg, #335e5c, #2f344f, #4e3a74);
+    background-size: 200%;
+    animation: gradient 20s infinite;
 }
 
 @keyframes gradient {
@@ -50,7 +49,7 @@
         background-position: 0 100%;
     }
     50% {
-        background-position: 25% 200%;
+        background-position: 100% 100%;
     }
     100% {
         background-position: 0 100%;
@@ -58,21 +57,19 @@
 }
 
 .header-button {
-    background: linear-gradient(
-            rgba(64, 110, 137, 0.5),
-            rgba(47, 76, 103, 0.75),
-            rgb(34, 48, 68));
+    background: rgba(255, 255, 255, 0.05);
     color: #ffffff;
 
     text-decoration: none;
     transition: 0.5s;
-    transition-property: color, background-color, transform;
+    transition-property: color, background, transform;
     padding: 0.5vmax;
     padding-inline: 1vmax;
     margin-right: 0.5%;
 }
 
 .header-button:hover {
-    color: #000000;
+    background: rgba(255, 255, 255, 0.25);
+    transform: rotate(5deg);
 }
 

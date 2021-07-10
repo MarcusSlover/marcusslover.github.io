@@ -113,6 +113,13 @@
     image-rendering: crisp-edges;
 }
 
+.section-hovering {
+    position: absolute;
+    display: flex;
+    transform: translateY(3vmax);
+    margin: 2vmax;
+}
+
 #friends {
     padding-bottom: 4vmax;
 }

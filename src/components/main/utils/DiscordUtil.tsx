@@ -36,7 +36,7 @@ export const friends: Array<Friend> = [
         name: "AlexDorian7",
         job: "Developer",
         clientId: "286688479755239434",
-        avatarHash: "ae94e4ead0f768bc6f9a13b1db173bc5",
+        avatarHash: "2e8c95a39d375b5042a8c0aed8c28f31",
         tag: "ΑΛΕΞ#0495"
     },
     {
@@ -92,8 +92,8 @@ export const friends: Array<Friend> = [
         name: "cae",
         job: "Piano Player",
         clientId: "852694671045165126",
-        avatarHash: "1d2f02e167c4edf5a50c8083f7daeb58",
-        tag: "4799"
+        avatarHash: "1b6e093de5f1b50fe8e13be253748bb5",
+        tag: "2421"
     },
     {
         name: "Chloe",
@@ -106,12 +106,12 @@ export const friends: Array<Friend> = [
         name: "pjesek",
         job: "Artist & Developer",
         clientId: "299552822905536515",
-        avatarHash: "a_66fc7fb8af71a2864b973003521ac1ae",
+        avatarHash: "a_0e9315313fd0ab7700b5e9ac70179657",
         tag: "4202"
     },
     {
         name: "orange.",
-        job: "Artist",
+        job: "Gamer",
         clientId: "344125517152124949",
         avatarHash: "a_1f7212ff6c0cbbbafb635f375d1ac494",
         tag: "0001"
@@ -169,7 +169,7 @@ export const friends: Array<Friend> = [
         name: "Jay Kub",
         job: "Developer",
         clientId: "150730314409312256",
-        avatarHash: "a93345580fd22fde0780dcddf029c7e4",
+        avatarHash: "22c9cd23e941231fe6b8fbb37e3206ec",
         tag: "1023"
     },
     {
