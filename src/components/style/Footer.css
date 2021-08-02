@@ -17,6 +17,7 @@
     background-size: 200%;
     animation: gradient 20s infinite;
 
-    padding: 1vmax;
-
+    padding-block: 1vmax;
+    width: 100%;
+    z-index: 3;
 }

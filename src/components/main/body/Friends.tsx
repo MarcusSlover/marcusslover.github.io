@@ -13,12 +13,14 @@ interface FriendObject {
 }
 
 const Friends = () => {
+
+    // Getting all the friends.
     const visibleFriends: Array<FriendObject> = [];
     friends.forEach(friend => visibleFriends.push({name: friend.name, friend}));
     visibleFriends.sort((a, b) => a.name.localeCompare(b.name));
 
+    // Creation of friend elements.
     const sections: ReactNodeArray = [];
-
     visibleFriends.forEach(e => {
         const friend: Friend | undefined = friends.find(f => f.name === e.name);
         if (friend !== undefined) {
@@ -27,6 +29,7 @@ const Friends = () => {
         }
     });
 
+    // Html layout
     return <>
         <TextParent id={"friends"}
                     title={"My Friends"}

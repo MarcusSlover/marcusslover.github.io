@@ -21,5 +21,14 @@ html, body, #root {
     user-select: none;
 }
 
+#body {
+    padding-top: 3vmax;
+}
+
+#SuccessfulPurchase #footer {
+    position: fixed;
+    bottom: 0
+}
+
 
 

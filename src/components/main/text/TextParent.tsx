@@ -20,6 +20,11 @@ export interface TextParentProps {
     backgroundColor?: string;
 }
 
+/**
+ * Parent of all text boxes shown on the website.
+ * Manages images layout and children modifications.
+ * @constructor
+ */
 const TextParent: React.FC<TextParentProps> = ({
                                                    id,
                                                    title,
@@ -32,25 +37,33 @@ const TextParent: React.FC<TextParentProps> = ({
                                                    backgroundColor,
                                                    children
                                                }) => {
+
+    // Image creation.
     const image = img !== undefined ? require("../../style/img/" + img + ".png").default : undefined;
     const alignment = side === undefined ? "left" : side;
 
+    // Coloring.
     if (color !== undefined) {
         backColor = color;
         titleColor = increaseBrightness(color, 50);
     }
+
+    // Logo creation.
     const logoStyle = createLogoStyle(imgSize || 10);
     const bodyStyle = createBackStyle(backColor || Color.color, backgroundColor || Color.backgroundColor);
     bodyStyle.textAlign = side;
 
+    // Titles and children styles.
     const titleStyle = createTitleStyle(titleColor || Color.titleColor);
     const childColor = increaseBrightness(backColor || Color.color, 40);
 
+    // Background creation.
     const childBackgroundColor = increaseBrightness(Color.backgroundColor, 5);
     const boxTitle = title !== undefined ? <div className={"title"}>{title}</div> : undefined;
     const boxLogo = <span className={"logo"}> <img draggable={false} src={image} alt={"Owned by MarcusSlover"}
                                                    style={logoStyle}/></span>;
 
+    // Children modifications.
     const extraChildren: ReactNodeArray = [];
     const filteredChildren = React.Children.map(children, ((child, index) => {
         if (React.isValidElement(child)) {
@@ -68,8 +81,12 @@ const TextParent: React.FC<TextParentProps> = ({
         }
         return child;
     }));
+
+
+    // Div for the description box.
     const boxDescription = <div className="description">{filteredChildren}</div>;
 
+    // Body of the tex box.
     const bodyElement = (alignment === "left") ?
         <div className={"body"}>
             {image !== undefined && boxLogo}
@@ -81,8 +98,10 @@ const TextParent: React.FC<TextParentProps> = ({
             {image !== undefined && boxLogo}
         </div>;
 
+    // Title div.
     const headerElement = <div className={"header"} style={titleStyle}>{boxTitle !== undefined && boxTitle}</div>;
 
+    // Html layout.
     return <div id={id}>
         <section className={"text"} style={bodyStyle}>
             {headerElement}

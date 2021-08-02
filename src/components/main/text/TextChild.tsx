@@ -18,12 +18,28 @@ export interface TextChildProps {
     background?: string;
 }
 
-const TextChild: React.FC<TextChildProps> = ({id, img, imgSize, github, color, background, children}) => {
+/**
+ * A child of {@link TextParent}
+ * @constructor
+ */
+const TextChild: React.FC<TextChildProps> = ({
+                                                 id,
+                                                 img,
+                                                 imgSize,
+                                                 github,
+                                                 color,
+                                                 background,
+                                                 children
+                                             }) => {
 
+    // Color styles of the text box.
     const childColor = color || Color.color;
     const childBackgroundColor = background || Color.backgroundColor;
 
+    // Style of the background.
     const backStyle = createBackStyle(childColor, childBackgroundColor);
+
+    // Logo creation.
     const logoStyle = createLogoStyle(imgSize || 7);
     const image = img !== undefined ? require("../../style/img/" + img + ".png").default : undefined;
     const boxLogo = <span className="logo"><img draggable={false} src={image} alt={"Owned by MarcusSlover"}
@@ -31,6 +47,7 @@ const TextChild: React.FC<TextChildProps> = ({id, img, imgSize, github, color, b
 
     const sectionBackColor = increaseBrightness(childBackgroundColor, 5);
 
+    // Modification of children colors.
     const extraChildren: ReactNodeArray = [];
     const filteredChildren = React.Children.map(children, ((child, index) => {
         if (React.isValidElement(child)) {
@@ -50,6 +67,7 @@ const TextChild: React.FC<TextChildProps> = ({id, img, imgSize, github, color, b
         return child;
     }));
 
+    // Html layout.
     return <div id={id}>
         {extraChildren.length > 0 &&
         <section className={"layout"}>
@@ -67,6 +85,11 @@ const TextChild: React.FC<TextChildProps> = ({id, img, imgSize, github, color, b
     </div>;
 }
 
+/**
+ * Creates a background style with the given color values.
+ * @param color Color of the border top-bottom.
+ * @param background Color of the background.
+ */
 export const createBackStyle = (color: string, background?: string): CSSProperties => {
     return {
         borderBlockColor: color,
