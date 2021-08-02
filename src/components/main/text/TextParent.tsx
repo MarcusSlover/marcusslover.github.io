@@ -48,7 +48,8 @@ const TextParent: React.FC<TextParentProps> = ({
 
     const childBackgroundColor = increaseBrightness(Color.backgroundColor, 5);
     const boxTitle = title !== undefined ? <div className={"title"}>{title}</div> : undefined;
-    const boxLogo = <span className={"logo"}> <img draggable={false} src={image} alt={"Owned by MarcusSlover"} style={logoStyle}/></span>;
+    const boxLogo = <span className={"logo"}> <img draggable={false} src={image} alt={"Owned by MarcusSlover"}
+                                                   style={logoStyle}/></span>;
 
     const extraChildren: ReactNodeArray = [];
     const filteredChildren = React.Children.map(children, ((child, index) => {

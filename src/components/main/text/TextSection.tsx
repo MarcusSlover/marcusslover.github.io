@@ -7,7 +7,6 @@ import {Friend} from "../utils/DiscordUtil";
 import {Color} from "../utils/ColorUtil";
 import {createBackStyle} from "./TextChild";
 import {createLogoStyle} from "./TextUtil";
-import TextHovering from "./TextHovering";
 
 export interface TextSectionProps {
     friendData?: Friend;

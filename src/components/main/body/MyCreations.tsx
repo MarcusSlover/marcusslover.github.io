@@ -27,7 +27,8 @@ const MyCreations = () => {
             </TextChild>
 
             <TextChild id={"creations-box-fishing"}
-                       img={"blue_fish"}>
+                       img={"blue_fish"}
+                       github={"https://github.com/MarcusSlover/FishingPlus"}>
                 <b>FishingPlus</b>
                 <br/>
                 A Minecraft plugin that makes fishing better & more interesting!
@@ -36,7 +37,8 @@ const MyCreations = () => {
             </TextChild>
 
             <TextChild id={"creations-box-caverns"}
-                       img={"emerald"}>
+                       img={"emerald"}
+                       github={"https://github.com/MarcusSlover/Caverns"}>
                 <b>Caverns</b>
                 <br/>
                 The Caverns is a plugin based on one of the games from a Minecraft server called DiamondFire.
@@ -52,7 +54,8 @@ const MyCreations = () => {
             </TextChild>
 
             <TextChild id={"creations-box-survival"}
-                       img={"campfire"}>
+                       img={"campfire"}
+                       github={"https://github.com/MarcusSlover/SloverSurvivalReborn"}>
                 <b>SloverSurvivalReborn</b>
                 <br/>
                 It is an open-source Minecraft plugin that attempts to improve your survival experience.

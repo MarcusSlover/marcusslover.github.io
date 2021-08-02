@@ -17,7 +17,7 @@ const Friends = () => {
     friends.forEach(friend => visibleFriends.push({name: friend.name, friend}));
     visibleFriends.sort((a, b) => a.name.localeCompare(b.name));
 
-    const sections : ReactNodeArray = [];
+    const sections: ReactNodeArray = [];
 
     visibleFriends.forEach(e => {
         const friend: Friend | undefined = friends.find(f => f.name === e.name);

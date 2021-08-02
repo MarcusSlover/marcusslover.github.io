@@ -178,5 +178,19 @@ export const friends: Array<Friend> = [
         clientId: "432788218715308042",
         avatarHash: "a12c9669fd25623f5d6b615dcaabd716",
         tag: "4098"
+    },
+    {
+        name: "RyanLand",
+        job: "Developer",
+        clientId: "808966728201666620",
+        avatarHash: "a_d33031343f709a2ef2a08f58beb37f67",
+        tag: "0001"
+    },
+    {
+        name: "Jonni",
+        job: "Gamer",
+        clientId: "615898574693335040",
+        avatarHash: "9358c57ada98078ce98e7893d5148c8b",
+        tag: "2324"
     }
 ];
