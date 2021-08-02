@@ -19,11 +19,11 @@ export const friends: Array<Friend> = [
         tag: "0008"
     },
     {
-        name: "A Yoshi",
+        name: "1pe",
         job: "Developer",
         clientId: "366714416244326401",
         avatarHash: "a_d298488d9c833bff8e323c5f3cfe604f",
-        tag: "7395"
+        tag: "A Yoshi#7395"
     },
     {
         name: "ACraftingFish",
