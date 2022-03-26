@@ -68,7 +68,7 @@ const TextChild: React.FC<TextChildProps> = ({
     }));
 
     // Reactive hovering.
-    const [hovering, setHovering] = useState(false);
+    //const [hovering, setHovering] = useState(false);
     //TODO: add github links
 
     // Go to link.
@@ -79,8 +79,6 @@ const TextChild: React.FC<TextChildProps> = ({
 
     // Html layout.
     return <div id={id}
-                onMouseEnter={() => setHovering(true)}
-                onMouseLeave={() => setHovering(false)}
                 onClick={() => goToWebsite(github)}
     >
         {extraChildren.length > 0 &&
