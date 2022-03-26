@@ -1,7 +1,7 @@
 /*
  * Copyright (c) 2022, MarcusSlover All rights reserved.
  */
-import React, {ReactNodeArray} from "react";
+import React, {ReactNode} from "react";
 import TextParent from "../text/TextParent";
 import TextChild from "../text/TextChild";
 import TextSection from "../text/TextSection";
@@ -20,7 +20,7 @@ const Friends = () => {
     visibleFriends.sort((a, b) => a.name.localeCompare(b.name));
 
     // Creation of friend elements.
-    const sections: ReactNodeArray = [];
+    const sections: ReactNode[] = [];
     visibleFriends.forEach(e => {
         const friend: Friend | undefined = friends.find(f => f.name === e.name);
         if (friend !== undefined) {

@@ -2,7 +2,7 @@
  * Copyright (c) 2022, MarcusSlover All rights reserved.
  */
 
-import React, {ReactElement, ReactNodeArray} from 'react';
+import React, {ReactElement, ReactNode} from 'react';
 import '../../style/Text.css'
 import {Color, increaseBrightness} from "../utils/ColorUtil";
 import {createBackStyle, createLogoStyle, createTitleStyle} from "./TextUtil";
@@ -64,7 +64,7 @@ const TextParent: React.FC<TextParentProps> = ({
                                                    style={logoStyle}/></span>;
 
     // Children modifications.
-    const extraChildren: ReactNodeArray = [];
+    const extraChildren: ReactNode[] = [];
     const filteredChildren = React.Children.map(children, ((child, index) => {
         if (React.isValidElement(child)) {
             const element: ReactElement = child;

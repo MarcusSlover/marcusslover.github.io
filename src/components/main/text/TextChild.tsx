@@ -2,7 +2,7 @@
  * Copyright (c) 2022, MarcusSlover All rights reserved.
  */
 
-import React, {CSSProperties, ReactElement, ReactNodeArray, useState} from 'react';
+import React, {CSSProperties, ReactElement, ReactNode, useState} from 'react';
 import '../../style/Text.css'
 import {Color, increaseBrightness} from "../utils/ColorUtil";
 import {createLogoStyle} from "./TextUtil";
@@ -48,7 +48,7 @@ const TextChild: React.FC<TextChildProps> = ({
     const sectionBackColor = increaseBrightness(childBackgroundColor, 5);
 
     // Modification of children colors.
-    const extraChildren: ReactNodeArray = [];
+    const extraChildren: ReactNode[] = [];
     const filteredChildren = React.Children.map(children, ((child, index) => {
         if (React.isValidElement(child)) {
             const element: ReactElement = child;
