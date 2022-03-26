@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 2021, MarcusSlover All rights reserved.
+ * Copyright (c) 2022, MarcusSlover All rights reserved.
  */
 import React from 'react';
 import {Route, Switch} from 'react-router-dom';

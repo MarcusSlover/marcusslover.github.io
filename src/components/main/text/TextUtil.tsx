@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 2021, MarcusSlover All rights reserved.
+ * Copyright (c) 2022, MarcusSlover All rights reserved.
  */
 
 import {CSSProperties} from "react";
