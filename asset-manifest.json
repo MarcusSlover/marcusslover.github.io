@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/static/css/main.70d0cede.chunk.css",
-    "main.js": "/static/js/main.7dd8f0c4.chunk.js",
-    "main.js.map": "/static/js/main.7dd8f0c4.chunk.js.map",
+    "main.css": "/static/css/main.1fa47483.chunk.css",
+    "main.js": "/static/js/main.87e910bb.chunk.js",
+    "main.js.map": "/static/js/main.87e910bb.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.5c384851.js",
     "runtime-main.js.map": "/static/js/runtime-main.5c384851.js.map",
     "static/js/2.cd142cb0.chunk.js": "/static/js/2.cd142cb0.chunk.js",
@@ -10,7 +10,7 @@
     "static/js/3.78736c69.chunk.js": "/static/js/3.78736c69.chunk.js",
     "static/js/3.78736c69.chunk.js.map": "/static/js/3.78736c69.chunk.js.map",
     "index.html": "/index.html",
-    "static/css/main.70d0cede.chunk.css.map": "/static/css/main.70d0cede.chunk.css.map",
+    "static/css/main.1fa47483.chunk.css.map": "/static/css/main.1fa47483.chunk.css.map",
     "static/js/2.cd142cb0.chunk.js.LICENSE.txt": "/static/js/2.cd142cb0.chunk.js.LICENSE.txt",
     "static/media/Font.css": "/static/media/JetBrainsMono[wght].671d357d.ttf",
     "static/media/bungo.png": "/static/media/bungo.95e65692.png",
@@ -20,7 +20,7 @@
   "entrypoints": [
     "static/js/runtime-main.5c384851.js",
     "static/js/2.cd142cb0.chunk.js",
-    "static/css/main.70d0cede.chunk.css",
-    "static/js/main.7dd8f0c4.chunk.js"
+    "static/css/main.1fa47483.chunk.css",
+    "static/js/main.87e910bb.chunk.js"
   ]
 }
