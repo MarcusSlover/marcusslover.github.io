@@ -2,7 +2,7 @@
  * Copyright (c) 2021, MarcusSlover All rights reserved.
  */
 import React from 'react';
-import { Switch, Route } from 'react-router-dom';
+import {Route, Switch} from 'react-router-dom';
 import App from "./app/App";
 import SuccessfulPurchase from "./app/SuccessfulPurchase";
 

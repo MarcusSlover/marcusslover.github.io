@@ -8,25 +8,31 @@
 }
 
 .header-logo img {
+    position: absolute;
     display: flex;
-    width: 3.5vmax;
-    height: auto;
+
+    transform: translate3d(-30%, -5%, 1vmax);
+    height: 90%;
+
     padding-right: 0.5vmax;
     padding-left: 0.25vmax;
 
-    transition: 2s;
+    transition: 500ms;
     transition-property: transform;
+    image-rendering: crisp-edges
 }
 
 .header-logo img:hover {
     display: flex;
-    transform: rotate(-360deg);
+    transform: translate3d(-30%, -5%, 1vmax) rotate(-15deg);
+    image-rendering: crisp-edges
+
 }
 
 #header {
     display: flex;
     padding-top: 0.25vmax;
-    padding-bottom: 0.25vmax;
+    padding-bottom: 0.5vmax;
 
     justify-content: space-evenly;
 
@@ -39,9 +45,9 @@
     border-color: #ecf0f1;
 
     /* Background animation */
-    background: linear-gradient(90deg, #335e5c, #2f344f, #4e3a74);
-    background-size: 200%;
-    animation: gradient 20s infinite;
+    background: linear-gradient(90deg, #317c3d, #2b3775, #4c3181);
+    background-size: 150%;
+    animation: gradient 10s infinite;
 
     position: fixed;
     width: 100%;
@@ -62,15 +68,15 @@
 }
 
 .header-button {
-    background: rgba(255, 255, 255, 0.05);
+    background: rgba(255, 255, 255, 0.09);
     color: #ffffff;
 
     text-decoration: none;
     transition: 0.5s;
     transition-property: color, background, transform;
-    padding: 0.5vmax;
+    padding: 0.25vmax;
     padding-inline: 1vmax;
-    margin-right: 0.5%;
+    margin-right: 3%;
 }
 
 .header-button:hover {

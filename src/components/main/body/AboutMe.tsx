@@ -7,6 +7,8 @@ import TextParent from "../text/TextParent";
 import React from "react";
 
 const AboutMe = () => {
+    const years = new Date().getFullYear() - 2003;
+
     return <>
         <TextParent id={"about"}
                     title={"About me"}
@@ -15,7 +17,7 @@ const AboutMe = () => {
                     side={"left"}>
             Hi, I'm Marcus and I live in Warsaw.
             <br/>
-            I am 18 years old and coding is my true passion.
+            I am {years} years old and coding is my true passion.
             <br/>
             My favorite programming languages are:
             Java, Kotlin, TypeScript, and JavaScript.
@@ -36,13 +38,27 @@ const AboutMe = () => {
             <TextChild id={"about-box-break"}>
                 As I started dealing with more advanced & complicated programs, I realized how irritating it became.
                 I had decided to take a break before I came back to programming.
-                However, that allowed discovering more about games...
+                However, that allowed to discover more things about games...
             </TextChild>
 
             <TextChild id={"about-box-mc"}>
                 Minecraft was the game that helped me a lot with my coding journey.
                 It allowed me to learn Java while adding new content to the game.
                 Seeing my creations motivated me to keep going and learning more!
+            </TextChild>
+
+            <TextChild id={"about-box-servers"}>
+                A huge part of my inspiration comes from servers like Hypixel and Mineplex.
+                Looking at their creations, I was highly motivated to try and make something similar.
+                This determination resulted in creation my own Minecraft server.
+
+            </TextChild>
+
+            <TextChild id={"about-box-today"}>
+                Because of my creative past and communities, I've managed to build, today
+                I'm surrounded by amazing people who love coding as much as I do.
+                I'm glad they are part of my life and that I can share passions with them.
+
             </TextChild>
 
         </TextParent>

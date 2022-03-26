@@ -3,8 +3,7 @@
  */
 
 import '../style/Header.css'
-import marcusHead from '../style/img/marcus_head.png'
-import {useRef} from "react";
+import marcusHead from '../style/img/mark_figure.png'
 
 const Header = () => {
     return <div id="header">

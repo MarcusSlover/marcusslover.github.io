@@ -8,16 +8,16 @@
 
     color: white;
     font-size: 1.5vmax;
-    font-family: "JetBrains Mono Light", monospace;
+    font-family: "JetBrains Mono ExtraLight", monospace;
 
     border-block-style: solid;
-    border-block-width: 0.5vmax;
+    border-block-width: 0.35vmax;
 
     border-radius: 2vmax;
-    box-shadow: 1.5vmax 1.5vmax #283949;
+    box-shadow: 1vmax 1vmax #283949;
 
-    margin: 3vmax auto 3.5vmax;
-    padding: 1.5vmax 1vmax 0.5vmax;
+    margin: 4.5vmax auto 2vmax;
+    padding: 1.15vmax 1vmax 0;
     width: 55%;
 }
 
@@ -36,13 +36,13 @@
     display: flex;
     flex-direction: row;
     font-size: 1.25vmax;
-    border-block-width: 0.33vmax;
+    border-block-width: 0.25vmax;
 
     border-top-style: none;
     border-block-style: solid;
     border-radius: 2vmax;
 
-    margin: 0.25vmax auto 1.25vmax;
+    margin: 0.75vmax auto 1.25vmax;
     padding: 1.5vmax;
     width: 75%;
 

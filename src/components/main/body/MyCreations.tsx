@@ -17,6 +17,16 @@ const MyCreations = () => {
             I absolutely love developing Minecraft plugins. Once, I even created my fully custom network!
             There are probably even some YouTube videos about SloverTeam Network.
 
+            <TextChild id={"creations-box-rp"}
+                       img={"rp"}
+                       github={"https://github.com/MarcusSlover/ResourcePacker"}
+            >
+                <b>ResourcePacker</b>
+                <br/>
+                A program written in Java that lets you create Minecraft resource packs
+                in a really efficient way. Bring custom items, blocks, and menus to life!
+            </TextChild>
+
             <TextChild id={"creations-box-corpus"}
                        img={"corpusmc"}>
                 <b>CorpusMc</b>

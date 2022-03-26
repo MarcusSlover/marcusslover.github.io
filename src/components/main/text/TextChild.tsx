@@ -2,7 +2,7 @@
  * Copyright (c) 2021, MarcusSlover All rights reserved.
  */
 
-import React, {CSSProperties, ReactElement, ReactNodeArray} from 'react';
+import React, {CSSProperties, ReactElement, ReactNodeArray, useState} from 'react';
 import '../../style/Text.css'
 import {Color, increaseBrightness} from "../utils/ColorUtil";
 import {createLogoStyle} from "./TextUtil";
@@ -67,23 +67,38 @@ const TextChild: React.FC<TextChildProps> = ({
         return child;
     }));
 
+    // Reactive hovering.
+    const [hovering, setHovering] = useState(false);
+    //TODO: add github links
+
+    // Go to link.
+    const goToWebsite = (url?: string) => {
+        if (url == null) return;
+        window.open(url, '_blank')
+    }
+
     // Html layout.
-    return <div id={id}>
+    return <div id={id}
+                onMouseEnter={() => setHovering(true)}
+                onMouseLeave={() => setHovering(false)}
+                onClick={() => goToWebsite(github)}
+    >
         {extraChildren.length > 0 &&
-        <section className={"layout"}>
-            {extraChildren}
-        </section>
+            <section className={"layout"}>
+                {extraChildren}
+            </section>
         }
 
         {(filteredChildren !== undefined && filteredChildren !== null && filteredChildren.length) > 0 &&
-        <section className={"text-box"} style={backStyle}>
-            {image !== undefined && boxLogo}
-            <section>{filteredChildren}</section>
-        </section>
+            <section className={"text-box"} style={backStyle}>
+                {image !== undefined && boxLogo}
+                <section>{filteredChildren}</section>
+            </section>
         }
 
     </div>;
 }
+
 
 /**
  * Creates a background style with the given color values.
