@@ -74,7 +74,7 @@ const MyCreations = () => {
             </TextChild>
 
             <TextChild id={"creations-hologram"}
-                       img={"sign"}>
+                       img={"hologram_sign"}>
                 <b>SloverHologram</b>
                 <br/>
                 A simple Spigot plugin that allows creating custom floating texts (commonly known as holograms).
