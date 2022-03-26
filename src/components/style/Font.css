@@ -8,6 +8,16 @@
 }
 
 @font-face {
+    font-family: "JetBrains Mono Light";
+    src: url("./fonts/fonts/ttf/JetBrainsMono-Light.ttf");
+}
+
+@font-face {
+    font-family: "JetBrains Mono";
+    src: url("./fonts/fonts/ttf/JetBrainsMono-Regular.ttf");
+}
+
+@font-face {
     font-style: italic;
     font-family: "JetBrains Mono";
     src: url("./fonts/fonts/variable/JetBrainsMono-Italic[wght].ttf");
