@@ -39,7 +39,7 @@ const TextParent: React.FC<TextParentProps> = ({
                                                }) => {
 
     // Image creation.
-    const image = img !== undefined ? require("../../style/img/" + img + ".png").default : undefined;
+    const image = img !== undefined ? require("../../style/img/" + img + ".png") : undefined;
     const alignment = side === undefined ? "left" : side;
 
     // Coloring.

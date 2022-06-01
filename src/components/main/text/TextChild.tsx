@@ -41,7 +41,7 @@ const TextChild: React.FC<TextChildProps> = ({
 
     // Logo creation.
     const logoStyle = createLogoStyle(imgSize || 7);
-    const image = img !== undefined ? require("../../style/img/" + img + ".png").default : undefined;
+    const image = img !== undefined ? require("../../style/img/" + img + ".png") : undefined;
     const boxLogo = <span className="logo"><img draggable={false} src={image} alt={"Owned by MarcusSlover"}
                                                 style={logoStyle}/></span>;
 
